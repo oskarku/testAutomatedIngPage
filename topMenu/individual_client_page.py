@@ -13,6 +13,9 @@ class accountBankingTestPage():
     def __init__(self, driver):
         self.driver = driver
 
+    def __init__(self, driver, listCorrectStringElementNameSubMenu, correctTitleString, listDictCardElement):
+        self.driver = driver
+
     def testAllPages(self):
         pass
 
@@ -65,13 +68,15 @@ class accountBankingTestPage():
                 EC.presence_of_element_located((By.ID, "breadcrumb_item"))
             )
         except Exception as e:
-            print("Błąd podczas oczekiwania na element:", str(e))
+            print("Exception during while an element :", str(e))
 
         return {}
 
 
     def getTestRaportMenu(self,listDictWithInformationdDistroTileBodyElement):
+        
         return{}
+
 
     def getRaportTestGreySection(self, listDictElement):
         return{}
