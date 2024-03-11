@@ -29,7 +29,7 @@ class accountBankingTestPage():
                 isCheckFlagSubmenuCountElement=True
 
         except Exception as e:
-            print("Błąd podczas oczekiwania na element:", str(e))
+            print("Exception during while an element :", str(e))
 
         return isCheckFlagSubmenuCountElement
 
@@ -46,7 +46,7 @@ class accountBankingTestPage():
                 else:
                     isValidNameElementInSubmenu=False
         except Exception as e:
-            print("Błąd podczas oczekiwania na element:", str(e))
+            print("Exception during while an element ", str(e))
 
         return isValidNameElementInSubmenu
 
@@ -59,7 +59,7 @@ class accountBankingTestPage():
             if validTitle==elementTitlePage:
                 isCheckTitlePage=True
         except Exception as e:
-            print("Błąd podczas oczekiwania na element:", str(e))
+            print("Exception during while an element :", str(e))
         return isCheckTitlePage
 
     def readeElementInMenu(self):
@@ -74,7 +74,6 @@ class accountBankingTestPage():
 
 
     def getTestRaportMenu(self,listDictWithInformationdDistroTileBodyElement):
-        
         return{}
 
 
